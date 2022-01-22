@@ -17,8 +17,7 @@ float price;
 };
 
  
-int
-main () 
+int main() 
 {
   
 struct library l[100];
@@ -99,7 +98,7 @@ printf ("\t author name = %s", l[i].author);
 printf ("\t  pages = %d", l[i].pages);
 	      
  
-printf ("\t  price = %f", l[i].price);
+printf ("\t  price = %.2f Rs", l[i].price);
 	    
 }
 	  
@@ -138,8 +137,7 @@ for (i = 0; i < keepcount; i++)
 	      
 if (strcmp (bk_nm, l[i].bk_name) == 0)
 		
-printf ("%s \t %s \t %d \t %f", l[i].bk_name, l[i].author,
-			 l[i].pages, l[i].price);
+printf ("%s \t %s \t %d \t %f", l[i].bk_name, l[i].author,l[i].pages, l[i].price);
 	    
 }
 	  
@@ -158,10 +156,7 @@ exit (0);
 	
  
 }
-if (j!=1||j!=2||j!=3||j!=4||j!=5){
-    exit (0);
-    printf("Invalid responce!!!");
-}
+
     
 }
   
